@@ -107,6 +107,9 @@ img {
 .pad-bot{
 	padding-bottom:54px;
 	}
+	.pad-top{
+	padding-top:54px;
+	}
 p{
 	line-height:18px;
 	}
@@ -536,7 +539,9 @@ a:hover {
 	background-color: #d94e13 !important;
 	}
 .green .team-img .overlay-img{
-   	background-color: rgba(22,160,133, 0.95);
+  /*background-color: rgba(22,160,133, 0.95);*/
+  background-color: rgba(217,78,19, 0.95);
+
 	border-radius:50%;
 	}
 .green.underline{
