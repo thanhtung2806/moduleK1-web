@@ -187,7 +187,7 @@ span{
 ----------- TYPOGRAPHY: BASE 12px, LINE-HEIGHT:18px --------------
 --------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Oswald', 'Open Sans', sans-serif;
+	font-family: 'Roboto Condensed', 'Oswald', 'Open Sans', sans-serif;
 	font-weight:300;
 	}
 h1, h2, h3{
@@ -810,7 +810,7 @@ a.current:hover{
 	}
 .navbar .nav span{
 	line-height:18px;
-	font-family: 'Oswald', 'Open Sans', sans-serif;
+	font-family: 'Roboto Condensed', 'Oswald', 'Open Sans', sans-serif;
 	font-weight:300;
 	font-size:18px;
 	}
