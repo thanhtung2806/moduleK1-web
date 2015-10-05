@@ -1942,11 +1942,35 @@ tbody td{
    	transition: all 0.3s ease-in-out;}
 
 .img-content .text-holder p { font-size: 15px; }
-.img-content .b1 { position: absolute; top: 90px; left: -50px; }
-.img-content .b2 { position: absolute; top: 90px; right: -50px; }
-.img-content .b3 { position: absolute; bottom: 90px; left: -70px; }
-.img-content .b4 { position: absolute; bottom: 90px; right: -70px; }
+/*.img-content .b1 { position: absolute; top: 90px; left: -13px; }*/
+/*.img-content .b2 { position: absolute; top: 90px; right: -13px; }
+.img-content .b3 { position: absolute; bottom: 60px; left: -25px; }
+.img-content .b4 { position: absolute; bottom: 90px; right: -10px; }*/
 
-
+.workflow-item { position: absolute; }
+.workflow-item .row{ position: relative; }
+.workflow-item .col-lg-6{ padding: 0; }
+.workflow-item .img{ width: 300px; height: 300px; background-size: contain; display: block; }
+.workflow-item p{ opacity: 0; }
+.workflow-a {  top: -28px; left: -94px; }
+	.workflow-a	.img { background-image: url("../images/workB1A.png"); }
+		.workflow-a:hover .img { background-image: url("../images/workB1.png"); }
+		.workflow-a:hover p { opacity: 1; }
+	.workflow-a	.b1 { top: 100px; left: 86px; position: relative; }
+.workflow-b { bottom: -28px; left: -52px; }
+	.workflow-b	.img { background-image: url("../images/workB4A.png"); }
+		.workflow-b:hover .img { background-image: url("../images/workB4.png"); }
+		.workflow-b:hover p { opacity: 1; }
+	.workflow-b	.b2 { top: 125px; left: 78px; position: relative; }
+.workflow-c { top: -28px; right: -27px; }
+	.workflow-c	.img { background-image: url("../images/workB2A.png"); }
+		.workflow-c:hover .img { background-image: url("../images/workB2.png"); }
+		.workflow-c:hover p { opacity: 1; }
+	.workflow-c	.b3 { top: 125px; right: 18px; position: relative; }
+.workflow-d { bottom: -38px; right: 16px; }
+	.workflow-d	.img { background-image: url("../images/workB3A.png"); }
+		.workflow-d:hover .img { background-image: url("../images/workB3.png"); }
+		.workflow-d:hover p { opacity: 1; }
+	.workflow-d	.b4 { top: 105px; right: -10px; position: relative; }
 
 
