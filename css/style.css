@@ -1642,8 +1642,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	 color: #FFFFFF;
 	 font-size: 14px;
 	 line-height: 18px;
-	 margin-bottom: 9px;
-	 margin-top: 9px;
+	 margin-bottom: 13px;
+	 margin-top: 0px;
 	 padding: 8px 9px !important; /*1px of border + 8px + 8px + 1px of border = 18px*/
 	}
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus{
