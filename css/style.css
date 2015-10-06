@@ -481,6 +481,10 @@ a:hover {
    	background-color: rgba(255,255,255, 0.95);
 	border-radius:500px 500px 500px 500px;
 	}
+.white .team-img .bg-service{
+   	background-color: #b4b4b4;
+	border-radius:500px 500px 500px 500px;
+	}
 .white.underline{
 	background-color: #ffffff;
 	color:#ffffff;
@@ -544,6 +548,12 @@ a:hover {
   /*background-color: rgba(22,160,133, 0.95);*/
   /*background-color: rgba(217,78,19, 0.95);*/
   background-color: rgba(59,59,59, 0.95);
+	border-radius:50%;
+	}
+.green .team-img .bg-service{
+  /*background-color: rgba(22,160,133, 0.95);*/
+  /*background-color: rgba(217,78,19, 0.95);*/
+  background-color: #b4b4b4;
 	border-radius:50%;
 	}
 .green.underline{
@@ -651,6 +661,10 @@ a:hover {
 	}
 .blue .team-img .overlay-img{
    	background-color: rgba(31,46,60, 0.95);
+	border-radius:50%;
+	}
+.blue .team-img .bg-service{
+   	background-color: #b4b4b4;
 	border-radius:50%;
 	}
 .blue.underline{
@@ -1198,6 +1212,13 @@ cite{
     width: 100%;
 	display:table;
 	}
+.bg-service{
+	height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	display:table;
+	}
 .team-img .overlay-img .contact-icons{
 	display:table-cell;
 	vertical-align:middle;
@@ -1210,6 +1231,11 @@ cite{
    	-o-transition: all 0.4s ease-in-out;
    	-ms-transition: all 0.4s ease-in-out;
    	transition: all 0.4s ease-in-out;
+	}
+.team-img .bg-service .contact-icons{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
 	}
 .team-img:hover .overlay-img .contact-icons{
 	transform: scale(1,1);
@@ -1930,7 +1956,7 @@ tbody td{
 
 
 .nav-lang { position: absolute; top: 70px; right: 20px; z-index: 300;}
-	.nav-lang a{ margin: 0 2px; display: inline-block; color: #3B3B3B; font-size: 20px;}
+	.nav-lang a{ margin: 0 2px; display: inline-block; color: #3B3B3B; font-size: 16px;}
 
 
 .img-content { position: relative; }
