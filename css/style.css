@@ -1955,7 +1955,7 @@ tbody td{
 	}
 
 
-.nav-lang { position: absolute; top: 70px; right: 20px; z-index: 300;}
+.nav-lang { position: absolute; top: 60px; right: 20px; z-index: 300;}
 	.nav-lang a{ margin: 0 2px; display: inline-block; color: #3B3B3B; font-size: 16px;}
 
 
