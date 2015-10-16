@@ -52,6 +52,15 @@ $(document).ready(function() {
         	preload: [0,1] // Will preload 0 - before current, and 1 after the current image
         	},
 	});
+	$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+	});
 	//popover
 	$(function (){
 		$(".project-popover").popover({
