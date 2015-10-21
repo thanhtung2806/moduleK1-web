@@ -41,18 +41,19 @@ $(document).ready(function() {
 		$('.tips').tooltip();
 	});
 	//magnific popup
- 	$('.image-link').magnificPopup({
-		type: 'image',
-  		retina: {
-    			ratio: 2 // can also be function that should retun this number
-  		},
-	gallery: {
-        	enabled: true,
-        	navigateByImgClick: true,
-        	preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        	},
-	});
+ // 	$('.image-link').magnificPopup({
+	// 	type: 'image',
+ //  		retina: {
+ //    			ratio: 2 // can also be function that should retun this number
+ //  		},
+	// gallery: {
+ //        	enabled: true,
+ //        	navigateByImgClick: true,
+ //        	preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+ //        	},
+	// });
 	$('.gallery').each(function() { // the containers for all your galleries
+		console.log('a');
     $(this).magnificPopup({
         delegate: 'a', // the selector for gallery item
         type: 'image',
