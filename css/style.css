@@ -2016,7 +2016,7 @@ tbody td{
 				   	-ms-transition: all 0.3s ease-in-out;
 				   	transition: all 0.3s ease-in-out;}
 	.workflow-c	.b3 { top: 125px; right: 18px; position: relative; }
-.workflow-d { bottom: -38px; right: 16px; }
+.workflow-d { bottom: -38px; right: -5px; }
 	.workflow-d .img-preload { background-image: url("../images/workB3.png"); display: none}
 	.workflow-d	.img { background-image: url("../images/workB3A.png"); }
 		.workflow-d:hover .img { background-image: url("../images/workB3.png"); }
@@ -2027,3 +2027,32 @@ tbody td{
 				   	transition: all 0.3s ease-in-out;}
 	.workflow-d	.b4 { top: 105px; right: -10px; position: relative; }
 
+.center-all { display: -webkit-flex; display: -ms-flexbox; display: flex;-webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; width: 100%; }
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	.center-all { display: block; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.center-all { display: -webkit-flex; display: -ms-flexbox; display: flex; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
