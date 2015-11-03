@@ -1339,7 +1339,7 @@ cite{
 	font-size:36px;
 	display:block;
 	}
-.service h5{
+.service h5{ font-weight: 400;
 	margin-top:0;
 	margin-bottom:0;
 	}
