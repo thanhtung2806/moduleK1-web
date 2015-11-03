@@ -630,35 +630,47 @@
 	</script>
 	<!-- Contact Form -->
    	<script>
-	   	var ajax = {
-		   	send: function() {
-				var userName = $("input[id=namecon]").val();
-				var userEmail = $("input[id=emailcon]").val();
-				var userComments = $("textarea[id=commentcon]").val();
+      var ajax = {
+        send: function() {
+        var userName = $("input[id=namecon]").val();
+        var userEmail = $("input[id=emailcon]").val();
+        var userComments = $("textarea[id=commentcon]").val();
 
-				if(userName == "" || userEmail == "" || userComments == "")
-					alert("Form not complete");
-				else {
-					ajax.SetText("Sending...");
-					$.post("sendmail.html", {
-						name: userName, email: userEmail, comments: userComments
-					}, function(data) {
-						if(data == "true") {
-							ajax.SetText("Sent!");
-						} else {
-							ajax.SetText("Submit");
-							alert(data);
-						}
+        if(userName == "" || userEmail == "" || userComments == "")
+          alert("Form not complete");
+        else {
+          ajax.SetText("Sending...");
+          $.post("mail/sendmail.php", {
+            name: userName, email: userEmail, comments: userComments
+          }, function(data) {
+            // console.log(data);
+            if(data) {
+              // console.log('a');
+              ajax.SetText("Sent!");
+              $("input[id=namecon]").val('');
+              $("input[id=emailcon]").val('');
+              $("textarea[id=commentcon]").val('');
+            } else {
+              ajax.SetText("Submit");
 
+              // alert(data);
+            }
+          }).done(function() {
+              // alert( "second success" );
+            })
+            .fail(function() {
+              // alert( "error" );
+            })
+            .always(function() {
+              //finished
+          });
+        }
 
-					});
-				}
-
-		   	},
-		   	   	SetText: function(text) {
-			   	   	$("input[id=sendcon]").val(text);
-		   	   	}
-	   	   }
-   	</script>
+        },
+            SetText: function(text) {
+              $("input[id=sendcon]").val(text);
+            }
+         }
+    </script>
 </body>
 </html>
