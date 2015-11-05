@@ -1155,6 +1155,7 @@ cite{
 	border-width: 2px;
 	margin: 0 auto;
 	width: 108px; /* 108+ 9 +9= 126 / 18 = 7 */
+	height: 108px; -webkit-filter: grayscale(100%); filter: grayscale(100%);
 	}
 .caroufredsel_wrapper{
 	margin:0 !important;
